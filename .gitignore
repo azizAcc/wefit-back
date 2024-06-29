@@ -1,0 +1,5 @@
+upload_env/
+.idea/
+__pycache__/
+migrations/
+1/
