@@ -1,5 +1,6 @@
-upload_env/
+wefit-back-env/
 .idea/
+local.env
 __pycache__/
 migrations/
 1/
