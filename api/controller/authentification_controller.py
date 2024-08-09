@@ -1,6 +1,6 @@
 from flask_restx import Namespace, Resource
 from flask import request
-from api.service.athentification_service import AuthService
+from api.service.authentification_service import AuthService
 from ..model import Tracker
 from ..service.tracking_service import tracking_service
 
