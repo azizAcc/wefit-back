@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 from flask_cors import CORS
 from flask_restx import Api
 # from api.controller.aws_controller import bucket_api
-from api.controller.stripe_controller import stripe_api
+# from api.controller.stripe_controller import stripe_api
 from api.controller.authentification_controller import auth_api
 from api.controller.tracking_controller import api_tracker
 from api.controller.contact_controller import contact_api
@@ -31,7 +31,7 @@ def create_app():
         description="Api for uplaod me project")
 
     # api.add_namespace(bucket_api, "/aws")
-    api.add_namespace(stripe_api, "/stripe")
+    # api.add_namespace(stripe_api, "/stripe")
     api.add_namespace(auth_api, "/auth")
     api.add_namespace(api_tracker, "/tracker")
     api.add_namespace(contact_api, "/contact")
