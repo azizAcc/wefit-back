@@ -9,7 +9,7 @@ from flask_restx import Api
 # from api.controller.stripe_controller import stripe_api
 from api.controller.authentification_controller import auth_api
 from api.extensions import db, bcrypt
-# from api.model import User, Tracker, Payments, Files, Links
+from api.model import User, Coach, SportIcon
 
 
 load_dotenv()
@@ -18,7 +18,7 @@ load_dotenv()
 def create_app():
     app = Flask(__name__)
     CORS(app, resources={r'/*': {'origins': '*'}})
-    app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://upload_file_user:zW1fgnkC9KVXgPh4F9vf4zfwPNdotVd6@dpg-coi0s7ol5elc73cvt1sg-a.frankfurt-postgres.render.com/upload_file"
+    app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://wefit_db_user:aMzmBuCYPIKjqgdD3p3I1xNhJ1fzYgUw@dpg-cq0nrq3v2p9s73cdie40-a.frankfurt-postgres.render.com/wefit_db"
     db.init_app(app)
     bcrypt.init_app(app)
     blueprint = Blueprint('api_bp', __name__)
