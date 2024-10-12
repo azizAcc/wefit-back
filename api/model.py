@@ -32,5 +32,5 @@ class Coach(db.Model):
 
 class SportIcon(db.Model):
     __tablename__ = 'sport_icon'
-    name = db.Column(db.String(255))
+    name = db.Column(db.String(255), primary_key=True)
     icon = db.Column(db.String(255))
