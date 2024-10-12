@@ -8,8 +8,6 @@ from flask_restx import Api
 # from api.controller.aws_controller import bucket_api
 # from api.controller.stripe_controller import stripe_api
 from api.controller.authentification_controller import auth_api
-from api.controller.tracking_controller import api_tracker
-from api.controller.contact_controller import contact_api
 from api.extensions import db, bcrypt
 # from api.model import User, Tracker, Payments, Files, Links
 
@@ -33,8 +31,6 @@ def create_app():
     # api.add_namespace(bucket_api, "/aws")
     # api.add_namespace(stripe_api, "/stripe")
     api.add_namespace(auth_api, "/auth")
-    api.add_namespace(api_tracker, "/tracker")
-    api.add_namespace(contact_api, "/contact")
     app.register_blueprint(blueprint, methods=['GET', 'POST'])
 
     return app

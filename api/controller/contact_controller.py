@@ -1,3 +1,4 @@
+"""
 from flask import request
 from ..model import Contact
 from flask_restx import Namespace, Resource
@@ -22,3 +23,4 @@ class SendContact(Resource):
                 print(e)
                 return {"status": 404}
 
+"""

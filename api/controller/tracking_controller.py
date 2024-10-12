@@ -1,3 +1,4 @@
+"""
 from ..model import Tracker
 from flask_restx import Resource, Namespace
 from flask import request
@@ -22,3 +23,4 @@ class TrackingController(Resource):
             except Exception as e:
                 print(e)
                 return {"status": 404}
+"""

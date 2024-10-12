@@ -1,4 +1,4 @@
-from ..extensions import db
+"""from ..extensions import db
 
 
 class contact_service:
@@ -10,3 +10,4 @@ class contact_service:
             print("contact commit success")
         except Exception as e:
             raise e
+"""

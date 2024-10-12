@@ -1,4 +1,4 @@
-from ..model import Tracker
+"""from ..model import Tracker
 from ..extensions import db
 
 
@@ -14,3 +14,4 @@ class tracking_service:
             print("tracking commit success")
         except Exception as e:
             raise e
+"""
